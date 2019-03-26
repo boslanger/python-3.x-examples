@@ -1,5 +1,5 @@
 """
-23March2016
+23March2019
 A simulation to run the game Blackjack
 
 Notes on the rules of the games
@@ -25,10 +25,7 @@ def blackjack():
 	player_hand = []
 
 	def hand_total(hand):
-		"""
-		A function that calculates the card total and returns the sum.
-		This needs to be in the blackjack function because of the variables?
-		"""
+		"""A function that calculates the card total and returns the sum. """
 
 		total = 0
 		non_aces = [card for card in hand if card != 'A']
@@ -126,7 +123,7 @@ def blackjack():
 
 		if player_choice.lower() == 'q':
 			# stops the program.
-			print(f"You leave with {winnings} winnings.")
+			print(f"You leave with ${winnings} winnings.")
 			break
 	with open('winnings.txt', 'w') as w:
 		w.write(str(winnings))
